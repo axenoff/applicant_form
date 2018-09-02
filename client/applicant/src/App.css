@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+  background-color: #E0E0E0;
+  min-height: 100vh;
+  height: 100%;
+  font-family: 'sans-serif';
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #41b3da;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.applicant-forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
+.short-form {
+  margin-top: 10px;
+  width: 200px;
+  height: 30px;
+  /* border: none; */
+  background-color: #ffffff;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+.extra-short-form {
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 10px;
+  width: 75px;
+  height: 30px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+.long-form {
+  margin-top: 10px;
+  width: 300px;
+  height: 90px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+.level-selector {
+  text-transform: capitalize;
+}
+
+.simple-text {
+  margin-top: 10px;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.entered-skills {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill {
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 4px;
+  background-color: #FF6347;
+  border-radius: 6px;
+}
+
+.send-data-btn {
+  margin-left: 10px;
+  margin-top: 10px;
+  color: white;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  background-color: #41b3da;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-text {
+  /* text-align: center;
+  height: 100%; */
+}
+
+.inactive {
+  background-color: #f3f3f3 ;
+}
+
+.extra-short-form.invalid, .level-selector.invalid, .short-form.invalid, .long-form.invalid {
+  border-color: red;
+}
+
+.short-form:focus, .long-form:focus {
+  outline: none;
+}
+
+.uploaded-photo {
+  margin-top: 10px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
