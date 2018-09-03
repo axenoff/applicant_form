@@ -5,9 +5,11 @@ class ApplicantsController < ApplicationController
   end
 
   def create
-    Applicant.create(params)
-
-    render json: {created: true}  
+    if Applicant.create(params)
+      render json: {created: true}
+    else
+      render json: {error: true}
+    end  
   end
 
   def career_levels
